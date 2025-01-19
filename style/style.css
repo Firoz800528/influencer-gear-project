@@ -74,6 +74,19 @@ body{
 .banner-image img{
     width: 100%;
 }
+
+.contributor{
+    padding-top: 4.25rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.contributor img{
+
+}
+
+
 @media screen and (max-width:576px) {
     .nav{
         flex-direction: column;
@@ -82,5 +95,11 @@ body{
         flex-direction: column-reverse;
 
     }
-}
+    .contributor{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+    .contributor .img{
+    }
 
+}
